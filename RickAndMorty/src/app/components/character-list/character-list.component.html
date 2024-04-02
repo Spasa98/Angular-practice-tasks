@@ -1,0 +1,45 @@
+<div class="main-container">
+    <div class="search-container">
+        <span class="p-input-icon-left  search-bar-container">
+            <i class="icon pi pi-search"></i>
+            <input class="search-bar" placeholder="Search character..."  type="text" [(ngModel)]="value" (ngModelChange)="onTextChange($event)" />
+        </span>
+    </div>
+    <div class="characters-container">
+        <div class="characters" >
+            <p class="header">Characters</p>
+            
+            <div class="character " *ngFor="let character of listOfCharacters">
+                <!-- <p>{{character.name}}</p> -->
+                <div class="avatar">
+                    <img src={{character.image}} alt="Name name name" style="width: 100%; height: 100%; border-radius: 100%;">
+                </div>
+                <div class="datas">
+                    <div class="name">
+                        <p>{{character.name}}</p>
+                    </div>
+                    <div class="attributes">
+                        <span style="margin-right: 15px;"> 
+                            <p class="attribut-name">Species</p>
+                            <p>{{character.species}}</p>
+                        </span>
+                        <span style="flex:1">
+                            <p class="attribut-name">Origin</p>
+                            <p>{{character.origin.name}}</p>
+                        </span>
+                        <span style="flex:1">
+                            <p class="attribut-name">Location</p>
+                            <p>{{character.location.name}}</p>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="button-container" *ngIf="pagesInfo!=undefined" >
+                <button *ngIf="pagesInfo.next!=undefined" class="show-more" (click)="onShowMore()">Show more</button>
+                &nbsp;
+                <button *ngIf="pagesInfo.prev!=undefined && this.curentPage!=1" class="show-more" (click)="onShowLese()">Show lese</button>
+            </div>
+        </div>
+    </div>
+</div>

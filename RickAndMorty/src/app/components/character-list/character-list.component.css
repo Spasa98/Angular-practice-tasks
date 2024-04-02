@@ -1,0 +1,157 @@
+p, h3, h5{
+    margin: 0;
+    padding: 0;
+
+}
+
+.main-container{
+    width: 30vw;
+    height: 85vh;
+    background-color: white;
+    min-width: 400px;
+    min-height: 525px;
+}
+.search-container{
+    width: 100%;
+    height: 20%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-bar-container{
+    width: 80%;
+    height: 40%;
+    background-color: yellow;
+}
+.search-bar{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(243,244,246);
+    border: none;
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+    font-family: sans-serif;
+    font-weight: bold;
+
+}
+.search-bar::placeholder{
+    color: #cac9c9;
+    font-size: 11px;
+
+}
+.icon{
+    /* position: absolute; */
+    color: #cac9c9;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+.characters-container{
+    height: 80%;
+    /* background-color: rebeccapurple; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+}
+.characters-container::-webkit-scrollbar{
+    /* background-color: rebeccapurple; */
+    width: 6px;
+
+}
+.characters-container::-webkit-scrollbar-thumb {
+    background: rebeccapurple; /* Set color of the scrollbar thumb */
+}
+.characters-container::-webkit-scrollbar-thumb:hover {
+    background: rgb(81, 35, 128); /* Set color of the scrollbar thumb */
+}
+.characters-container::-webkit-scrollbar-track {
+    background: #d3d2d2; /* Set color of the scrollbar track */
+}
+.characters{
+    width: 80%;
+    height: 100%;
+}
+
+.header{
+   font-size: 14px;
+   font-weight: bold;
+   color: rgb(122, 119, 119);
+}
+
+.character{
+    width: 100%;
+    height:100px;
+    /* background-color: red; */
+    margin-bottom: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid rgb(236, 236, 236);
+    padding-bottom: 20px;
+}
+
+.avatar{
+    height: 100%;
+    aspect-ratio: 1/1;
+    margin-right:5%;
+}
+.datas{
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+}
+
+.name, .attributes, .values{
+    width: 100%;
+}
+.name{
+    
+    /* background-color: gold; */
+    font-size: 17px;
+    font-weight: bold;
+    padding-bottom: 5px;
+
+}
+.attributes{
+
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:400;
+}
+
+.attribut-name{
+    color: rgb(202, 202, 202);
+}
+
+.values{
+    background-color: purple;
+}
+.show-more{
+    border-radius: 5%;
+    background-color: rgb(224, 224, 224);;
+    width: 100px;
+    height: 40px;
+    margin-bottom: 5%;
+    color: #a7a7a7;
+    border:1px solid #b1b0b0;
+    font-weight: bold;
+}
+.show-more:hover{
+    background-color:rgb(124, 124, 124) ;
+    cursor: pointer;
+}
+
+.button-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
