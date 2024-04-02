@@ -5,7 +5,7 @@
             <input class="search-bar" placeholder="Search character..."  type="text" [(ngModel)]="value" (ngModelChange)="onTextChange($event)" />
         </span>
     </div>
-    <div class="characters-container">
+    <div #resultsContainer class="characters-container">
         <div class="characters" >
             <p class="header">Characters</p>
             
